@@ -100,6 +100,7 @@
     </div>
   </body>
 </html>
+
 ![poketmon](https://github.com/user-attachments/assets/9359c92d-c230-40d0-b44e-1849173de5e9)
 
 ## 2. Card 만들기
@@ -171,4 +172,5 @@
     </div>
   </body>
 </html>
+
 ![card2](https://github.com/user-attachments/assets/1dad827e-89cd-4e60-b910-d319e26d1c6d)
