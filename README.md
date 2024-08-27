@@ -100,4 +100,75 @@
     </div>
   </body>
 </html>
+![poketmon](https://github.com/user-attachments/assets/9359c92d-c230-40d0-b44e-1849173de5e9)
+
+## Card 만들기
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card</title>
+    <style>
+        body {
+            background-color: rgb(213,201,221);
+        }
+      .container {
+        width: 100px;
+        perspective: 1000px;
+        padding: 100px;
+      }
+
+      .item {
+        width: 200px;
+        height: 250px;
+        background-color: royalblue;
+        transition: all 1s;
+        transform-style: preserve-3d;
+      }
+
+      .item:hover {
+        transform: rotateY(900deg) scale(1.5);
+        transition-duration: 0.7s;
+      }
+
+      .item::before,
+      .item::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-weight: 600;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        
+        backface-visibility: hidden;
+      }
+
+      .item::before {
+        background-image: url(./모코코/1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: "김태윤";
+        background-color: #354f52;
+        align-items: end;
+      }
+
+      .item::after {
+        content: "(☞ﾟヮﾟ)☞       잘부탁드립니다";
+        font-size: 14px;
+        background-color: #a7c6da;
+        transform: rotateY(180deg);
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item"></div>
+    </div>
+  </body>
+</html>
 
